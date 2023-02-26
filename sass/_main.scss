@@ -1,0 +1,169 @@
+@use 'var';
+
+main{
+    padding: 25px;    
+    
+    // Titulo y presentacion
+
+    & .presentacion-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: 20rem;
+        & .subtitulo h1 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: var.$colorGeneral;
+        }
+    
+        & .titulo h2 {
+            font-size: 2.1rem;
+            color: var.$colorTitlS;
+        }
+    
+        & .puesto h3 {
+            font-size: 1.25rem;
+            color: var.$colorTextP;
+        }
+
+        & .descripcion p {  
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+        
+        & .btn-cv button {
+            margin-top: 3rem;
+            padding: 20px;
+            color: var.$colorGeneral;
+            border: none;
+            font-size: 1rem;
+            width: 75%;
+            font-weight: 900;
+            cursor: pointer;
+            border: 1.5px solid var.$colorGeneral;
+            border-radius: 5px;
+            background: none;
+
+            &:hover {
+                background-color: #c71ddd17;
+            }
+        }
+    } 
+
+    // Sobre mi
+
+    & .aboutMe{
+        padding: 1rem 0rem;
+        margin: 4rem 0rem;
+        & .numberE{
+            font-size: 1.2rem;
+            color: var.$colorGeneral;
+        }
+        & h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0rem;
+            color: var.$colorTitlS;
+        }
+
+        & .about-box {
+            & .descripcion-box{ 
+                margin-top: 1.5rem;
+                & p {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-top: 0.8rem;
+                }
+
+                & span {
+                    color: var.$colorGeneral;
+                }
+            }
+        }
+    }
+
+    // Tecnologias
+
+    & .tecnologias-box {
+        padding: 2rem 0rem;
+        & .numberE{
+            font-size: 1.2rem;
+            color: var.$colorGeneral;
+        }
+        & h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0rem;
+            color: var.$colorTitlS;
+        }
+
+        & h3 {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: var.$colorTitlS;
+        }
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            font-size: 1.3rem;
+            gap: 0px 10px;
+            margin: 20px 0px;
+            overflow: hidden;
+            list-style: none;
+        
+            & a {
+                text-decoration: none;
+                color: var.$colorTitlS;
+            }
+            & li{
+                margin-top: 10px;
+                &::before {
+                    content: "▹";
+                    color: var.$colorGeneral;
+                    font-size: 1.2rem;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+
+    // Proyectos
+
+    .proyectos-box {
+        & .numberE{
+            font-size: 1.2rem;
+            color: var.$colorGeneral;
+        }
+        & h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0rem;
+            color: var.$colorTitlS;
+        }
+    }
+
+    // Contacto
+
+    .contacto-box {
+        & .numberE{
+            font-size: 1.2rem;
+            color: var.$colorGeneral;
+        }
+        & h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0rem;
+            color: var.$colorTitlS;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

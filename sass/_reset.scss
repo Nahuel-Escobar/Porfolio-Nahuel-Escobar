@@ -1,0 +1,20 @@
+@use 'var';
+
+// Fuente de google
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap');
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nunito Sans', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    background-color: var.$backgroundColor;
+    color: var.$colorTextP;
+}
