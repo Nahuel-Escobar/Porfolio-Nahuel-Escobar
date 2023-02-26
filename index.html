@@ -1,136 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Nahuel Escobar | Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-container">
-        <!-- Puedo hacer el menu con un pop pap para que no puedan moverse -->
-        <header id="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Logo.png" alt="Logo">
-                </a>
+      <!-- Puedo hacer el menu con un pop pap para que no puedan moverse -->
+      <header id="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ol>
+            <li>
+              <a href="#sobreMi">Sobre mi</a>
+            </li>
+            <li>
+              <a href="#tecnologias">Tecnologias</a>
+            </li>
+            <li>
+              <a href="#proyectos">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+            <button>Resumen</button>
+          </ol>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="presentacion-box">
+          <div class="subtitulo">
+            <h1>Hola, mi nombre es</h1>
+          </div>
+          <div class="titulo">
+            <h2>Nahuel Escobar.</h2>
+          </div>
+          <div class="puesto">
+            <h3>Frontend developer.</h3>
+          </div>
+          <div class="descripcion">
+            <p>
+              Soy un desarrollador Frontend al cual le gusta centrarse en
+              aspectos como la legibilidad, reusabilidad y escalabilidad del
+              código que escribo, así como en la documentación del mismo para
+              prevenir errores al aplicar ciertas funcionalidades en una parte
+              dada del proyecto que se desarrolla.
+            </p>
+          </div>
+          <div class="btn-cv">
+            <a href="#"><button>Mira mis proyectos!</button></a>
+          </div>
+        </section>
+        <section class="aboutMe" id="sobreMi">
+          <h2><span class="numberE">01.</span> Sobre mi</h2>
+          <div class="about-box">
+            <div>
+              <div class="descripcion-box">
+                <p>
+                  Hola! Me llamo Esteban Nahuel Escobar.<span>
+                    Tengo 19 años y soy frontend developer.</span
+                  >
+                </p>
+                <p>
+                  ¿Como llegue a ser desarollador frontend? Pues estuve un
+                  <span>tiempo investigando sobre este mundo</span> de la
+                  programacion, para ver que me llamaba más la atención.
+                </p>
+                <p>
+                  No me tomo mucho tiempo para decidirme por el
+                  <span>Desarrolo Web</span> por lo tanto comence a buscar
+                  lugares para estudiar y me decidi por <span>CoderHouse</span>.
+                </p>
+                <p>
+                  En esta institución IT me recibi de
+                  <span>"Frontend developer React js".</span> Al día de hoy sigo
+                  manteniendome informando, estudiando las nuevas tecnologias y
+                  poniendome aprueba dia a dia sobre este mundo de la
+                  <span>programacion</span> con muchos proyectos en mente.
+                </p>
+              </div>
             </div>
-            <div class="bars">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav class="nav-bar">
-                <ol>
-                    <li>
-                        <a href="#sobreMi">Sobre mi</a>
-                    </li>
-                    <li>
-                        <a href="#tecnologias">Tecnologias</a>
-                    </li>
-                    <li>
-                        <a href="#experiencias">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                    <button>Resumen</button>
-                </ol>
-            </nav>
-        </header>
-        <main id="main">
-            <section class="presentacion-box">
-                <div class="subtitulo">
-                    <h1>Hola, mi nombre es</h1>
-                </div>
-                <div class="titulo">
-                    <h2>
-                        Nahuel Escobar.
-                    </h2>
-                </div>
-                <div class="puesto">
-                    <h3>
-                        Frontend developer.
-                    </h3>
-                </div>
-                <div class="descripcion">
-                    <p>
-                        Soy un desarrollador Frontend al cual le gusta centrarse en aspectos como la legibilidad, reusabilidad y escalabilidad del código que escribo, así como en la documentación del mismo para prevenir errores al aplicar ciertas funcionalidades en una parte dada del proyecto que se desarrolla.
-                    </p>
-                </div>
-                <div class="btn-cv">
-                    <a href="#"><button>Mira mis proyectos!</button></a>
-                </div>
-            </section>
-            <section class="aboutMe" id="sobreMi">
-                <h2><span class="numberE">01.</span> Sobre mi</h2>
-                <div class="about-box">
-                    <div>
-                        <div class="descripcion-box">
-                            <p>
-                                Hola! Me llamo Esteban Nahuel Escobar.<span> Tengo 19 años y soy frontend developer.</span>
-                            </p>
-                            <p>
-                                ¿Como llegue a ser desarollador frontend? Pues estuve un <span>tiempo investigando sobre este mundo</span> de la programacion, para ver que  me llamaba más la atención.
-                            </p>
-                            <p>
-                                No me tomo mucho tiempo para decidirme por el <span>Desarrolo Web</span> por lo tanto comence a buscar lugares para estudiar y me decidi por <span>CoderHouse</span>.
-                            </p>
-                            <p>
-                                En esta institución IT me recibi de <span>"Frontend developer React js".</span> Al día de hoy sigo manteniendome informando, estudiando las nuevas tecnologias y poniendome aprueba dia a dia sobre este mundo de la <span>programacion</span> con muchos proyectos en mente.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="imagen-box"> Para un futuro
+          </div>
+          <!-- <div class="imagen-box"> Para un futuro
                     <img src="img/Logo.png" alt="Foto Perfil">
                 </div> -->
-            </section>
-            <section class="tecnologias-box" id="tecnologias">
-                <h2><span class="numberE">02.</span> Tecnologias</h2>
-                <ul>
-                    <li><a href="#">Html</a></li>
-                    <li><a href="#">Css</a></li>
-                    <li><a href="#">Bootstrap</a></li>
-                    <li><a href="#">Javascript</a></li>
-                    <li><a href="#">Git</a></li>
-                    <li><a href="#">React js</a> </li>
-                </ul>
-            </section>
-            <section class="proyectos-box">
-                <h2><span class="numberE">03.</span> Proyectos</h2>
-                <!-- Inserte carrousel para experiencia labora y agregue proyectos interesante (App de clima, Pagina de adopcion animal, Pagina de medecina, etc..) -->
-            </section>
-            <section class="contacto-box">
-                <h2><span class="numberE">04.</span> ¿Que sigue?</h2>
-
-            </section>
-        </main>
-        <footer id="footer">
-            <div class="grid-footer">
-                <div>
-
+        </section>
+        <section class="tecnologias-box" id="tecnologias">
+          <h2><span class="numberE">02.</span> Tecnologias</h2>
+          <ul>
+            <li><a href="#">Html</a></li>
+            <li><a href="#">Css</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Git</a></li>
+            <li><a href="#">React js</a></li>
+          </ul>
+        </section>
+        <section class="proyectos-box" id="proyectos">
+          <h2><span class="numberE">03.</span> Proyectos</h2>
+          <div class="grid-proyecto">
+            <!-- Proyecto 1 -->
+            <div class="proyecto-container">
+              <div class="icons-box">
+                <div class="principal-box">
+                  <a href="https://nahuel-escobar.github.io/ProyectoFinal-Escobar/" target="_blank"><i class="fa-regular fa-folder"></i></a> <!--folder icon-->
                 </div>
-                <div>
-                    <div>
-
-                    </div>
-                    <div>
-                        
-                    </div>
-                    <div>
-
-                    </div>
+                <div class="secundaria-box">
+                  <a href="https://github.com/Nahuel-Escobar/ProyectoFinal-Escobar" target="_blank"><i class="fa-brands fa-github"></i></a> <!--Github icon-->
+                  <a href="https://nahuel-escobar.github.io/ProyectoFinal-Escobar/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <!--external icon-->
                 </div>
+              </div>
+              <div class="title-box">
+                <h2><a href="https://nahuel-escobar.github.io/ProyectoFinal-Escobar/" target="_blank">Pagina del clima con Api de OpenWeather</a></h2>
+              </div>
+              <div class="descripcion-box">
+                <h2>Aplicacion web con la funcionalidad de buscar el clima en cualquier ciudad o pais del mundo en tan solo 2 sencillos pasos.</h2>
+              </div>
+              <div class="details-box">
+                <p>Html5</p>
+                <p>Css3</p>
+                <p>Javascript</p>
+                <p>Git</p>
+                <p>SweetAlert</p>
+              </div>
             </div>
-        </footer>
+            <!-- Proyecto 2 -->
+            <div class="proyecto-container">
+              <div class="icons-box">
+                <div class="principal-box">
+                  <a href="https://nahuel-escobar.github.io/proyecto-freelancer/index.html" target="_blank"><i class="fa-regular fa-folder"></i></a> <!--folder icon-->
+                </div>
+                <div class="secundaria-box">
+                  <a href="https://github.com/Nahuel-Escobar/proyecto-freelancer" target="_blank"><i class="fa-brands fa-github"></i></a> <!--Github icon-->
+                  <a href="https://nahuel-escobar.github.io/proyecto-freelancer/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <!--external icon-->
+                </div>
+              </div>
+              <div class="title-box">
+                <h2><a href="https://nahuel-escobar.github.io/proyecto-freelancer/index.html" target="_blank">Pagina para la adopcion de perritos</a></h2>
+              </div>
+              <div class="descripcion-box">
+                <h2>Pagina hecha para un cliente, hecho con figma y luego pasado a codigo propio para que quede igual al figma del cliente. </h2>
+              </div>
+              <div class="details-box">
+                <p>Html5</p>
+                <p>Css3</p>
+                <p>Javascript</p>
+                <p>Git</p>
+                <p>Swiper Js</p>
+              </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="proyecto-container">
+              <div class="icons-box">
+                <div class="principal-box">
+                  <a href="https://allemedicijnen.nl/" target="_blank"><i class="fa-regular fa-folder"></i></a> <!--folder icon-->
+                </div>
+                <div class="secundaria-box">
+                  <a href="https://allemedicijnen.nl/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <!--external icon-->
+                </div>
+              </div>
+              <div class="title-box">
+                <h2><a href="https://allemedicijnen.nl/" target="_blank">Pagina de medicinas Wordpress</a></h2>
+              </div>
+              <div class="descripcion-box">
+                <h2>Pagina hecha con Wordpress para un cliente, dedicada a la venta de medicamentos, capaz de enviar un correo cuando se hace una compra.</h2>
+              </div>
+              <div class="details-box">
+                <p>Wordpress</p>
+                <p>Woocommerce</p>
+                <p>Elementor</p>
+              </div>
+            </div>
+          </div>
+          <!-- aca insertare el carrousel para experiencia laboral y agregue proyectos interesante (App de clima, Pagina de adopcion animal, Pagina de medecina, etc..) -->
+        </section>
+        <section class="contacto-box" id="contacto">
+          <h2><span class="numberE">04.</span> ¿Que sigue?</h2>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="grid-footer">
+          <div></div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Scripts de externos -->
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/2c1892ead4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2c1892ead4.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Script Propio-->
-   <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

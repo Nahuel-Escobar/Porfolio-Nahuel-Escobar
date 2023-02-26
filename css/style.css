@@ -143,7 +143,7 @@ main .presentacion-box {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 main .presentacion-box .subtitulo h1 {
   font-size: 1.1rem;
@@ -204,7 +204,8 @@ main .aboutMe .about-box .descripcion-box span {
   color: #c61ddd;
 }
 main .tecnologias-box {
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
+  margin: 4rem 0rem;
 }
 main .tecnologias-box .numberE {
   font-size: 1.2rem;
@@ -242,6 +243,10 @@ main .tecnologias-box ul li::before {
   font-size: 1.2rem;
   line-height: 12px;
 }
+main .proyectos-box {
+  padding: 1rem 0rem;
+  margin: 4rem 0rem;
+}
 main .proyectos-box .numberE {
   font-size: 1.2rem;
   color: #c61ddd;
@@ -250,6 +255,67 @@ main .proyectos-box h2 {
   font-size: 1.8rem;
   margin: 1.5rem 0rem;
   color: #ccd6f6;
+}
+main .grid-proyecto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  gap: 25px;
+}
+main .grid-proyecto .proyecto-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 25px;
+  height: 320px;
+  background-color: #112240;
+}
+main .grid-proyecto .proyecto-container .icons-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .grid-proyecto .proyecto-container .icons-box .principal-box i {
+  font-size: 2.5rem;
+  color: #c61ddd;
+}
+main .grid-proyecto .proyecto-container .icons-box .secundaria-box a {
+  color: #8892b0;
+  transition: all 0.4s ease;
+}
+main .grid-proyecto .proyecto-container .icons-box .secundaria-box a:hover {
+  color: #c61ddd;
+}
+main .grid-proyecto .proyecto-container .icons-box .secundaria-box i {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+main .grid-proyecto .proyecto-container .title-box h2 {
+  font-size: 1.35rem;
+  margin: 1.8rem 0rem 0.45rem 0rem;
+}
+main .grid-proyecto .proyecto-container .title-box h2 a {
+  color: #ccd6f6;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+main .grid-proyecto .proyecto-container .title-box h2 a:hover {
+  color: #c61ddd;
+}
+main .grid-proyecto .proyecto-container .descripcion-box h2 {
+  font-size: 1rem;
+  margin: 0.3rem 0rem;
+}
+main .grid-proyecto .proyecto-container .details-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+main .grid-proyecto .proyecto-container .details-box p {
+  font-size: 0.8rem;
+  color: #8892b0;
 }
 main .contacto-box .numberE {
   font-size: 1.2rem;
