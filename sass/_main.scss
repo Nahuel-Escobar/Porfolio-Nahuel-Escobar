@@ -104,10 +104,11 @@ main {
     }
     & ul {
       display: grid;
+      width: 90%;
       grid-template-columns: repeat(2, 1fr);
       font-size: 1.3rem;
       gap: 0px 10px;
-      margin: 20px 0px;
+      margin: 20px auto;
       overflow: hidden;
       list-style: none;
 
@@ -156,44 +157,43 @@ main {
       background-color: var.$colorSecundarioBox;
       & .icons-box {
         display: flex;
-          align-items: center;
+        align-items: center;
 
         justify-content: space-between;
 
         & .principal-box {
-            & i {
-                font-size: 2.5rem;
-                color: var.$colorGeneral;
-            }
+          & i {
+            font-size: 2.5rem;
+            color: var.$colorGeneral;
+          }
         }
 
         & .secundaria-box {
-            & a {
-                color: var.$colorTextP;
-                transition: all .4s ease;
-                &:hover {
-                    color: var.$colorGeneral;
-                }
+          & a {
+            color: var.$colorTextP;
+            transition: all 0.4s ease;
+            &:hover {
+              color: var.$colorGeneral;
             }
-            & i {
-                font-size: 1.4rem;
-                margin-left: 1rem;
-            }
+          }
+          & i {
+            font-size: 1.4rem;
+            margin-left: 1rem;
+          }
         }
       }
       & .title-box {
         & h2 {
-            font-size: 1.35rem;
-            margin: 1.8rem 0rem 0.45rem 0rem;
-            & a {
-                color: var.$colorTitlS;
-                transition: all .4s ease;
-                text-decoration: none;
-                &:hover {
-                    color: var.$colorGeneral;
-                }
+          font-size: 1.35rem;
+          margin: 1.8rem 0rem 0.45rem 0rem;
+          & a {
+            color: var.$colorTitlS;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            &:hover {
+              color: var.$colorGeneral;
             }
-
+          }
         }
       }
 
@@ -218,9 +218,9 @@ main {
   }
 
   // Contacto
-
   .contacto-box {
     margin: 0 auto;
+    padding: 3.5rem 0rem;
     text-align: center;
     & .numberE {
       font-size: 1.2rem;
@@ -251,7 +251,7 @@ main {
       font-size: 1rem;
       text-decoration: none;
       cursor: pointer;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
 
       &:hover {
         background-color: rgba(120, 17, 120, 0.199);

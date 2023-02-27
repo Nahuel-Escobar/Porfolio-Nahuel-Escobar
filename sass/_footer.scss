@@ -1,0 +1,37 @@
+@use "var";
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0rem;
+    text-align: center;
+    .grid-footer{
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        & .redes-box {
+            margin: 1rem auto;
+            & ul {  
+                list-style: none;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                font-size: 1.3rem;
+                gap: 2rem;
+
+                & li a {
+                    color: var.$colorTextP;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: var.$colorGeneral;
+                    }
+                }
+            }
+        }
+
+        & .copy-box {
+            margin: 1rem 0rem;
+            & h4 {
+                font-size: 1rem;
+            }
+        }
+    }
+}

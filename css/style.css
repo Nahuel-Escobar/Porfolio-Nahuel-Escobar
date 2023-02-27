@@ -223,10 +223,11 @@ main .tecnologias-box h3 {
 }
 main .tecnologias-box ul {
   display: grid;
+  width: 90%;
   grid-template-columns: repeat(2, 1fr);
   font-size: 1.3rem;
   gap: 0px 10px;
-  margin: 20px 0px;
+  margin: 20px auto;
   overflow: hidden;
   list-style: none;
 }
@@ -317,6 +318,7 @@ main .grid-proyecto .proyecto-container .details-box p {
 }
 main .contacto-box {
   margin: 0 auto;
+  padding: 3.5rem 0rem;
   text-align: center;
 }
 main .contacto-box .numberE {
@@ -350,6 +352,40 @@ main .contacto-box a {
 }
 main .contacto-box a:hover {
   background-color: rgba(120, 17, 120, 0.199);
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0rem;
+  text-align: center;
+}
+footer .grid-footer {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+footer .grid-footer .redes-box {
+  margin: 1rem auto;
+}
+footer .grid-footer .redes-box ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.3rem;
+  gap: 2rem;
+}
+footer .grid-footer .redes-box ul li a {
+  color: #8892b0;
+  transition: all 0.3s ease;
+}
+footer .grid-footer .redes-box ul li a:hover {
+  color: #c61ddd;
+}
+footer .grid-footer .copy-box {
+  margin: 1rem 0rem;
+}
+footer .grid-footer .copy-box h4 {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
