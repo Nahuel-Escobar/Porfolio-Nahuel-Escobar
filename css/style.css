@@ -90,11 +90,23 @@ header .nav-bar ol button:hover {
     right: 20px;
     z-index: 10;
   }
-  header .bars .line {
+  header .bars span {
+    display: flex;
     width: 30px;
     height: 3.5px;
     background-color: #c61ddd;
     margin: 6px 0px;
+    transition: all 0.5s;
+  }
+  header .bars.open .line1_bars {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  header .bars.open .line2_bars {
+    opacity: 0;
+    margin-left: -35px;
+  }
+  header .bars.open .line3_bars {
+    transform: translateY(-14px) rotate(45deg);
   }
   header .nav-bar {
     height: 0px;

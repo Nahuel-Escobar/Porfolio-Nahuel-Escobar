@@ -64,14 +64,25 @@ header {
             position: fixed;
             right: 20px;
             z-index: 10;
-
-            & .line {
+            & span {
+                display: flex;
                 width: 30px;
                 height: 3.5px;
                 background-color: var.$colorGeneral;
                 margin: 6px 0px;
+                transition: all .5s;
             }
+            &.open .line1_bars{
+                transform: translateY(5px) rotate(-45deg);
+            } 
+            &.open .line2_bars{
+                opacity: 0;
+                margin-left: -35px;
+            }
+            &.open .line3_bars{
+                transform: translateY(-14px) rotate(45deg);
 
+            }
         }
         
         & .nav-bar{
