@@ -7,6 +7,8 @@
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
   background-color: #0a192f;
@@ -180,7 +182,7 @@ main .presentacion-box .btn-cv button {
   padding: 20px;
   color: #c61ddd;
   border: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 75%;
   font-weight: 900;
   cursor: pointer;
@@ -235,11 +237,11 @@ main .tecnologias-box h3 {
 }
 main .tecnologias-box ul {
   display: grid;
-  width: 90%;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 1.3rem;
+  width: 100%;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  font-size: 1rem;
   gap: 0px 10px;
-  margin: 20px auto;
   overflow: hidden;
   list-style: none;
 }
@@ -366,6 +368,51 @@ main .contacto-box a:hover {
   background-color: rgba(120, 17, 120, 0.199);
 }
 
+@media screen and (min-width: 600px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .presentacion-box .subtitulo h1 {
+    font-size: 1rem;
+  }
+  main .presentacion-box .titulo h2 {
+    font-size: 3rem;
+    color: #ccd6f6;
+  }
+  main .presentacion-box .puesto h3 {
+    font-size: 2rem;
+    color: #8892b0;
+  }
+  main .presentacion-box .descripcion p {
+    font-size: 1rem;
+  }
+  main .presentacion-box .btn-cv button {
+    width: 42%;
+  }
+  main .aboutMe {
+    margin: 5rem 0rem;
+  }
+  main .aboutMe .about-box .descripcion-box p {
+    font-size: 1.2rem;
+  }
+  main .aboutMe .about-box .descripcion-box span {
+    color: #c61ddd;
+  }
+  main .tecnologias-box {
+    margin: 5rem 0rem;
+  }
+  main .tecnologias-box ul {
+    font-size: 1.5rem;
+  }
+  main .proyectos-box {
+    margin: 5rem 0rem;
+  }
+  main .proyectos-box .grid-proyecto .proyecto-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 footer {
   margin-top: 3rem;
   padding: 1.5rem 0rem;
