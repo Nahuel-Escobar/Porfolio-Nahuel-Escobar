@@ -261,14 +261,12 @@ main .grid-proyecto {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   width: 100%;
-  gap: 25px;
+  gap: 30px;
 }
 main .grid-proyecto .proyecto-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
   padding: 25px;
-  height: 320px;
+  grid-template-rows: repeat(4, auto);
   background-color: #112240;
 }
 main .grid-proyecto .proyecto-container .icons-box {
@@ -317,14 +315,41 @@ main .grid-proyecto .proyecto-container .details-box p {
   font-size: 0.8rem;
   color: #8892b0;
 }
+main .contacto-box {
+  margin: 0 auto;
+  text-align: center;
+}
 main .contacto-box .numberE {
   font-size: 1.2rem;
   color: #c61ddd;
 }
 main .contacto-box h2 {
-  font-size: 1.8rem;
-  margin: 1.5rem 0rem;
+  font-size: 1.4rem;
+  margin: 1rem 0rem;
+  color: #c61ddd;
+}
+main .contacto-box h3 {
+  font-size: 1.4rem;
   color: #ccd6f6;
+  margin: 1rem 0rem;
+}
+main .contacto-box p {
+  font-size: 1rem;
+  margin: 1rem 0rem 2.5rem 0rem;
+}
+main .contacto-box a {
+  color: #c61ddd;
+  background-color: transparent;
+  border: 1px solid rgb(137, 4, 139);
+  border-radius: 5px;
+  padding: 1rem 1.65rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main .contacto-box a:hover {
+  background-color: rgba(120, 17, 120, 0.199);
 }
 
 /*# sourceMappingURL=style.css.map */
