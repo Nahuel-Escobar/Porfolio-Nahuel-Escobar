@@ -413,6 +413,51 @@ main .contacto-box a:hover {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 800px) {
+  main {
+    width: 77%;
+  }
+  main .presentacion-box .subtitulo h1 {
+    font-size: 1rem;
+  }
+  main .presentacion-box .titulo h2 {
+    font-size: 3.6rem;
+    color: #ccd6f6;
+  }
+  main .presentacion-box .puesto h3 {
+    font-size: 2.5rem;
+    color: #8892b0;
+  }
+  main .presentacion-box .descripcion p {
+    font-size: 1rem;
+  }
+  main .presentacion-box .btn-cv button {
+    width: 35%;
+  }
+  main .aboutMe {
+    margin: 6rem 0rem;
+  }
+  main .tecnologias-box {
+    margin: 6rem 0rem;
+  }
+  main .proyectos-box {
+    margin: 5rem 0rem;
+  }
+  main .proyectos-box .grid-proyecto .proyecto-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .proyectos-box .grid-proyecto .proyecto-container .descripcion-box h2 {
+    margin: 1rem 0rem;
+  }
+  main .contacto-box p {
+    width: 85%;
+    margin: 1rem auto;
+  }
+  main .contacto-box .button-box {
+    margin-top: 3rem;
+  }
+}
 footer {
   margin-top: 3rem;
   padding: 1.5rem 0rem;
@@ -440,11 +485,77 @@ footer .grid-footer .redes-box ul li a {
 footer .grid-footer .redes-box ul li a:hover {
   color: #c61ddd;
 }
-footer .grid-footer .copy-box {
+footer .email-box {
+  display: none;
+}
+footer .copy-box {
   margin: 1rem 0rem;
 }
-footer .grid-footer .copy-box h4 {
+footer .copy-box h4 {
   font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  footer .grid-footer {
+    grid-template-columns: 1fr;
+  }
+  footer .grid-footer .redes-box {
+    position: relative;
+    margin: 1rem auto;
+  }
+  footer .grid-footer .redes-box ul {
+    position: fixed;
+    left: 2rem;
+    bottom: 0rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  footer .grid-footer .redes-box ul li {
+    transition: all 0.4s ease;
+  }
+  footer .grid-footer .redes-box ul li:hover {
+    color: #c61ddd;
+    transform: scale(1.2);
+  }
+  footer .grid-footer .redes-box ul li .line-1 {
+    display: block;
+    width: 2px;
+    background-color: #ccd6f6;
+    height: 10rem;
+  }
+  footer .email-box {
+    position: relative;
+    display: block;
+  }
+  footer .email-box ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2rem;
+    bottom: 0rem;
+    align-items: center;
+  }
+  footer .email-box ul li {
+    list-style: none;
+  }
+  footer .email-box ul li a {
+    margin: 1rem auto;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: #8892b0;
+    letter-spacing: 0.1em;
+    transition: all 0.4s ease;
+  }
+  footer .email-box ul li a:hover {
+    color: #c61ddd;
+    transform: scale(1.02);
+  }
+  footer .email-box ul li span {
+    display: block;
+    width: 2px;
+    background-color: #ccd6f6;
+    height: 10rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

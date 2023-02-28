@@ -316,7 +316,7 @@ main {
     }
 
     // proyecto
-    & .proyectos-box{
+    & .proyectos-box {
       margin: 5rem 0rem;
       .grid-proyecto {
         & .proyecto-container {
@@ -329,5 +329,74 @@ main {
 }
 
 // Lo hago responsive para laptops
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 77%;
+
+    // Titulo y presentacion
+    & .presentacion-box {
+      & .subtitulo h1 {
+        font-size: 1rem;
+      }
+      & .titulo h2 {
+        font-size: 3.6rem;
+        color: var.$colorTitlS;
+      }
+
+      & .puesto h3 {
+        font-size: 2.5rem;
+        color: var.$colorTextP;
+      }
+
+      & .descripcion p {
+        font-size: 1rem;
+      }
+
+      & .btn-cv button {
+        width: 35%;
+      }
+    }
+
+    // Sobre mi
+    & .aboutMe {
+      margin: 6rem 0rem;
+    }
+
+    // Tecnologias
+    & .tecnologias-box {
+      margin: 6rem 0rem;
+    }
+
+    // proyecto
+    & .proyectos-box {
+      margin: 5rem 0rem;
+      .grid-proyecto {
+        & .proyecto-container {
+          width: 70%;
+          margin: 0 auto;
+          & .descripcion-box {
+            & h2 {
+              margin: 1rem 0rem;
+            }
+          }
+        }
+      }
+    }
+
+    // Sobre mi
+
+    .contacto-box {
+      & p {
+        width: 85%;
+        margin: 1rem auto;
+      }
+
+      & .button-box {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
 
 // Lo hago responsive para computadoras

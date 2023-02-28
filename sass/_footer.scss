@@ -1,37 +1,106 @@
 @use "var";
 
 footer {
-    margin-top: 3rem;
-    padding: 1.5rem 0rem;
-    text-align: center;
-    .grid-footer{
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        & .redes-box {
-            margin: 1rem auto;
-            & ul {  
-                list-style: none;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                font-size: 1.3rem;
-                gap: 2rem;
+  margin-top: 3rem;
+  padding: 1.5rem 0rem;
+  text-align: center;
+  .grid-footer {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    & .redes-box {
+      margin: 1rem auto;
+      & ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-size: 1.3rem;
+        gap: 2rem;
 
-                & li a {
-                    color: var.$colorTextP;
-                    transition: all .3s ease;
-                    &:hover {
-                        color: var.$colorGeneral;
-                    }
-                }
-            }
+        & li a {
+          color: var.$colorTextP;
+          transition: all 0.3s ease;
+          &:hover {
+            color: var.$colorGeneral;
+          }
         }
-
-        & .copy-box {
-            margin: 1rem 0rem;
-            & h4 {
-                font-size: 1rem;
-            }
-        }
+      }
     }
+  }
+  & .email-box {
+    display: none;
+  }
+  & .copy-box {
+    margin: 1rem 0rem;
+    & h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    .grid-footer {
+      grid-template-columns: 1fr;
+      & .redes-box {
+        position: relative;
+        margin: 1rem auto;
+        & ul {
+          position: fixed;
+          left: 2rem;
+          bottom: 0rem;
+          flex-direction: column;
+          gap: 1.5rem;
+          & li {
+            transition: all 0.4s ease;
+            &:hover {
+              color: var.$colorGeneral;
+              transform: scale(1.2);
+            }
+
+            & .line-1 {
+              display: block;
+              width: 2px;
+              background-color: var.$colorTitlS;
+              height: 10rem;
+            }
+          }
+        }
+      }
+    }
+    & .email-box {
+      position: relative;
+      display: block;
+      & ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 2rem;
+        bottom: 0rem;
+        align-items: center;
+        & li {
+          list-style: none;
+          & a {
+            margin: 1rem auto;
+            writing-mode: vertical-rl;
+            text-decoration: none;
+            color: var.$colorTextP;
+            letter-spacing: 0.1em;
+            transition: all 0.4s ease;
+
+            &:hover {
+              color: var.$colorGeneral;
+              transform: scale(1.02);
+            }
+          }
+          & span {
+            display: block;
+            width: 2px;
+            background-color: var.$colorTitlS;
+            height: 10rem;
+          }
+        }
+      }
+    }
+  }
 }
