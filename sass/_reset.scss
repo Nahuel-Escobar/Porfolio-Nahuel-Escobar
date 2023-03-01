@@ -19,4 +19,17 @@ body {
     font-size: 62.5%;
     background-color: var.$backgroundColor;
     color: var.$colorTextP;
+
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: var.$colorGeneral;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: purple;
+        }
+    }
 }
