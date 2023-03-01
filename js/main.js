@@ -1,5 +1,4 @@
 // Menu responsive de mi Porfolio personal
-
 // Llamo a la clase bars
 let bars = document.querySelector(".bars")
 
@@ -11,4 +10,3 @@ bars.addEventListener("click", ()=>{
     // Le agrego una clase al bars para animacion
     bars.classList.toggle("open")
 })
-

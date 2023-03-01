@@ -1,5 +1,42 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap");
+.preloader {
+  width: 100%;
+  height: 100%;
+  background-color: #0a192f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.preloader .spinner {
+  width: 70px;
+  height: 70px;
+  border-top: 5px solid #c61ddd;
+  border-right: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 101;
+}
+.preloader .spinner > div {
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
