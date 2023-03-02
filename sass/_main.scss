@@ -1,5 +1,12 @@
 @use "var";
 
+
+// Modifico el z-index de animate.css porque me da un bug en el menu del navbar
+
+.animate__animated.animate__slow {
+  z-index: 10 !important;
+}
+
 main {
   padding: 25px;
 
@@ -8,8 +15,8 @@ main {
   & .presentacion-box {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
-    margin-bottom: 15rem;
+    padding-top: 3rem;
+    padding-bottom: 12rem;
     & .subtitulo h1 {
       font-size: 1.1rem;
       margin-bottom: 1rem;
@@ -54,8 +61,7 @@ main {
   // Sobre mi
 
   & .aboutMe {
-    padding: 1rem 0rem;
-    margin: 4rem 0rem;
+    padding: 5rem 0rem;
     & .numberE {
       font-size: 1.2rem;
       color: var.$colorGeneral;
@@ -85,8 +91,7 @@ main {
   // Tecnologias
 
   & .tecnologias-box {
-    padding: 1rem 0rem;
-    margin: 4rem 0rem;
+    padding: 5rem 0rem;
     & .numberE {
       font-size: 1.2rem;
       color: var.$colorGeneral;
@@ -131,8 +136,7 @@ main {
   // Proyectos
 
   .proyectos-box {
-    padding: 1rem 0rem;
-    margin: 4rem 0rem;
+    padding: 5rem 0rem;
     & .numberE {
       font-size: 1.2rem;
       color: var.$colorGeneral;
@@ -220,7 +224,7 @@ main {
   // Contacto
   .contacto-box {
     margin: 0 auto;
-    padding: 3.5rem 0rem;
+    padding: 4rem 0rem;
     text-align: center;
     & .numberE {
       font-size: 1.2rem;
@@ -293,7 +297,6 @@ main {
 
     // Sobre mi
     & .aboutMe {
-      margin: 5rem 0rem;
       & .about-box {
         & .descripcion-box {
           & p {
@@ -309,7 +312,6 @@ main {
 
     // Tecnologias
     & .tecnologias-box {
-      margin: 5rem 0rem;
       & ul {
         font-size: 1.5rem;
       }
@@ -317,7 +319,6 @@ main {
 
     // proyecto
     & .proyectos-box {
-      margin: 5rem 0rem;
       .grid-proyecto {
         & .proyecto-container {
           width: 80%;
@@ -358,19 +359,10 @@ main {
       }
     }
 
-    // Sobre mi
-    & .aboutMe {
-      margin: 6rem 0rem;
-    }
 
-    // Tecnologias
-    & .tecnologias-box {
-      margin: 6rem 0rem;
-    }
 
     // proyecto
     & .proyectos-box {
-      margin: 5rem 0rem;
       .grid-proyecto {
         & .proyecto-container {
           width: 70%;

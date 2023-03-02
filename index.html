@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <!-- Links externos -->
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+    <!-- SweetAlert2 -->
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
+    "
+      rel="stylesheet"
+    />
+    <!-- links propios -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Nahuel Escobar | Portfolio</title>
   </head>
@@ -14,16 +28,14 @@
       <div class="spinner">
         <div class="spinner">
           <div class="spinner">
-            <div class="spinner">
-      
-            </div>
+            <div class="spinner"></div>
           </div>
         </div>
       </div>
     </div>
     <div class="grid-container">
       <!-- Puedo hacer el menu con un pop pap para que no puedan moverse -->
-      <header id="header">
+      <header id="header" class="animate__animated animate__fadeInDown animate__delay-2s animate__slow">
         <div class="logo">
           <a href="index.html">
             <img src="img/Logo.png" alt="Logo" />
@@ -48,12 +60,12 @@
             <li>
               <a href="#contacto">Contacto</a>
             </li>
-            <button>Resumen</button>
+            <button id="resumen">Resumen</button>
           </ol>
         </nav>
       </header>
       <main id="main">
-        <section class="presentacion-box">
+        <section class="presentacion-box animate__animated animate__fadeInUp animate__delay-3s animate__slow">
           <div class="subtitulo">
             <h1>Hola, mi nombre es</h1>
           </div>
@@ -80,7 +92,7 @@
             >
           </div>
         </section>
-        <section class="aboutMe" id="sobreMi">
+        <section class="aboutMe wow animate__animated animate__fadeIn animate__slow" id="sobreMi" >
           <h2><span class="numberE">01.</span> Sobre mi</h2>
           <div class="about-box">
             <div>
@@ -114,7 +126,7 @@
                     <img src="img/Logo.png" alt="Foto Perfil">
                 </div> -->
         </section>
-        <section class="tecnologias-box" id="tecnologias">
+        <section class="tecnologias-box wow animate__animated animate__fadeIn animate__slow" id="tecnologias">
           <h2><span class="numberE">02.</span> Tecnologias</h2>
           <ul>
             <li>
@@ -157,7 +169,7 @@
             </li>
           </ul>
         </section>
-        <section class="proyectos-box" id="proyectos">
+        <section class="proyectos-box wow animate__animated animate__fadeIn animate__slow" id="proyectos">
           <h2><span class="numberE">03.</span> Proyectos</h2>
           <div class="grid-proyecto">
             <!-- Proyecto 1 -->
@@ -298,7 +310,7 @@
           </div>
           <!-- aca insertare el carrousel para experiencia laboral y agregue proyectos interesante (App de clima, Pagina de adopcion animal, Pagina de medecina, etc..) -->
         </section>
-        <section class="contacto-box" id="contacto">
+        <section class="contacto-box wow animate__animated animate__flipInX" id="contacto">
           <h2><span class="numberE">04.</span> ¿Que sigue?</h2>
           <h3>Ponernos en contacto</h3>
           <p>
@@ -315,7 +327,7 @@
       </main>
       <footer id="footer">
         <div class="grid-footer">
-          <div class="redes-box">
+          <div class="redes-box animate__animated animate__fadeIn animate__delay-4s animate__slow">
             <ul>
               <li>
                 <a href="https://github.com/Nahuel-Escobar" target="_blank"
@@ -343,7 +355,7 @@
               </li>
             </ul>
           </div>
-          <div class="email-box">
+          <div class="email-box animate__animated animate__fadeIn animate__delay-4s animate__slow">
             <ul>
               <li>
                 <a href="mailto:e.nahuelescobar@gmail.com" target="_blank"
@@ -364,11 +376,20 @@
       </footer>
     </div>
     <!-- Scripts de externos -->
+    <!-- Wow Js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/2c1892ead4.js"
       crossorigin="anonymous"
     ></script>
+    <!-- SweetAlert2 -->
+    <script src="
+      https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
+      "></script>
     <!-- Script Propio-->
     <script src="js/spinner.js"></script>
     <script src="js/main.js"></script>

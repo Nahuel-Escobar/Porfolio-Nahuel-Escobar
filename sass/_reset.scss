@@ -19,6 +19,7 @@ body {
     font-size: 62.5%;
     background-color: var.$backgroundColor;
     color: var.$colorTextP;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar{
         width: 12px;

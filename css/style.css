@@ -53,6 +53,7 @@ body {
   font-size: 62.5%;
   background-color: #0a192f;
   color: #8892b0;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -200,14 +201,18 @@ header .nav-bar ol button:hover {
     opacity: 0;
   }
 }
+.animate__animated.animate__slow {
+  z-index: 10 !important;
+}
+
 main {
   padding: 25px;
 }
 main .presentacion-box {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-bottom: 15rem;
+  padding-top: 3rem;
+  padding-bottom: 12rem;
 }
 main .presentacion-box .subtitulo h1 {
   font-size: 1.1rem;
@@ -244,8 +249,7 @@ main .presentacion-box .btn-cv button:hover {
   background-color: rgba(199, 29, 221, 0.0901960784);
 }
 main .aboutMe {
-  padding: 1rem 0rem;
-  margin: 4rem 0rem;
+  padding: 5rem 0rem;
 }
 main .aboutMe .numberE {
   font-size: 1.2rem;
@@ -268,8 +272,7 @@ main .aboutMe .about-box .descripcion-box span {
   color: #c61ddd;
 }
 main .tecnologias-box {
-  padding: 1rem 0rem;
-  margin: 4rem 0rem;
+  padding: 5rem 0rem;
 }
 main .tecnologias-box .numberE {
   font-size: 1.2rem;
@@ -309,8 +312,7 @@ main .tecnologias-box ul li::before {
   line-height: 12px;
 }
 main .proyectos-box {
-  padding: 1rem 0rem;
-  margin: 4rem 0rem;
+  padding: 5rem 0rem;
 }
 main .proyectos-box .numberE {
   font-size: 1.2rem;
@@ -382,7 +384,7 @@ main .grid-proyecto .proyecto-container .details-box p {
 }
 main .contacto-box {
   margin: 0 auto;
-  padding: 3.5rem 0rem;
+  padding: 4rem 0rem;
   text-align: center;
 }
 main .contacto-box .numberE {
@@ -440,23 +442,14 @@ main .contacto-box a:hover {
   main .presentacion-box .btn-cv button {
     width: 42%;
   }
-  main .aboutMe {
-    margin: 5rem 0rem;
-  }
   main .aboutMe .about-box .descripcion-box p {
     font-size: 1.2rem;
   }
   main .aboutMe .about-box .descripcion-box span {
     color: #c61ddd;
   }
-  main .tecnologias-box {
-    margin: 5rem 0rem;
-  }
   main .tecnologias-box ul {
     font-size: 1.5rem;
-  }
-  main .proyectos-box {
-    margin: 5rem 0rem;
   }
   main .proyectos-box .grid-proyecto .proyecto-container {
     width: 80%;
@@ -483,15 +476,6 @@ main .contacto-box a:hover {
   }
   main .presentacion-box .btn-cv button {
     width: 35%;
-  }
-  main .aboutMe {
-    margin: 6rem 0rem;
-  }
-  main .tecnologias-box {
-    margin: 6rem 0rem;
-  }
-  main .proyectos-box {
-    margin: 5rem 0rem;
   }
   main .proyectos-box .grid-proyecto .proyecto-container {
     width: 70%;
