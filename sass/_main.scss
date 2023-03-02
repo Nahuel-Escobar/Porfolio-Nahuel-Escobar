@@ -3,7 +3,7 @@
 
 // Modifico el z-index de animate.css porque me da un bug en el menu del navbar
 
-.animate__animated.animate__slow {
+.animate__animated .animate__slow {
   z-index: 10 !important;
 }
 

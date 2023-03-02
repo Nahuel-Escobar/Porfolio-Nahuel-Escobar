@@ -141,7 +141,7 @@ header .nav-bar ol button:hover {
     cursor: pointer;
     position: fixed;
     right: 20px;
-    z-index: 12;
+    z-index: 21;
   }
   header .bars span {
     display: flex;
@@ -167,7 +167,7 @@ header .nav-bar ol button:hover {
     top: 0px;
     bottom: 0px;
     right: 0px;
-    z-index: 11;
+    z-index: 20;
     width: 75%;
     transition: 0.5s;
     overflow: hidden;
@@ -202,7 +202,7 @@ header .nav-bar ol button:hover {
     opacity: 0;
   }
 }
-.animate__animated.animate__slow {
+.animate__animated .animate__slow {
   z-index: 10 !important;
 }
 
