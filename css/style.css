@@ -131,6 +131,10 @@ header .nav-bar ol button {
 header .nav-bar ol button:hover {
   background-color: rgba(199, 29, 221, 0.0901960784);
 }
+header .nav-bar ol button a {
+  text-decoration: none;
+  color: #c61ddd;
+}
 
 @media screen and (max-width: 768px) {
   header {
